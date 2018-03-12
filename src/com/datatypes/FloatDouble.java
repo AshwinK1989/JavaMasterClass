@@ -13,10 +13,10 @@ public class FloatDouble {
 
       //Covert given number of pounds to kilograms
 
-      byte poundsValue = 15;
-      double kilogramsValue = 0.45359237;
+      double poundsValue = 200d;
+      double kilogramsValue = 0.45_359_237;
 
-      double updatedKilogramValue = 15 * (0.45359237);
+      double updatedKilogramValue = poundsValue * (kilogramsValue);
 
       System.out.println("The updated kilogram value is "+updatedKilogramValue);
 
