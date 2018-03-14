@@ -13,6 +13,7 @@ public class SwitchStatements {
 
                 break;
 
+            //OR Conditions
             case 2:
             case 3:
             case 4:
