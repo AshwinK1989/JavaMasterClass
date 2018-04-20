@@ -13,7 +13,7 @@ public class VariableAccess {
             String surname = "karangutkar";
         }
 
-        System.out.println("The surname is "+surname);
+       // System.out.println("The surname is "+surname);
 
         if (true) {
 
