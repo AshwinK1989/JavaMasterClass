@@ -3,6 +3,7 @@ package com.collections;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Objects;
 
 public class Student implements Comparable<Student> {
 
@@ -17,8 +18,25 @@ public class Student implements Comparable<Student> {
     }
 
     @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Student student = (Student) o;
+        return marks == student.marks &&
+                rollno == student.rollno &&
+                Objects.equals(name, student.name);
+    }
+
+    @Override
+    public int hashCode() {
+
+        return Objects.hash(marks, name, rollno);
+    }
+
+    @Override
     public String toString() {
         return "Student{" +
+
                 "marks=" + marks +
                 ", name='" + name + '\'' +
                 ", rollno=" + rollno +
@@ -30,6 +48,8 @@ public class Student implements Comparable<Student> {
 
         return marks>stud.marks?1:marks<stud.marks?-1:0;
     }
+
+
 }
 
 
