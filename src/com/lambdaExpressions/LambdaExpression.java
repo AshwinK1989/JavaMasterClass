@@ -1,8 +1,8 @@
 package com.lambdaExpressions;
 
-interface A {
+interface B {
 
-   void Print();
+    void Print(String test);
 
 }
 
@@ -16,21 +16,14 @@ interface A {
 //    }
 //}
 
-public class LambdaDemoWithAnonymousInner {
+public class LambdaExpression {
 
 
     public static void main(String[] args) {
 
-        A a = new A ()->{
+        B b = (String test)-> System.out.println(test);
 
-            {
-
-                System.out.println("Hello");
-            }
-
-        };
-
-        a.Print();
+        b.Print("Hello");
 
     }
 
