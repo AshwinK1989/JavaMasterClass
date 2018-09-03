@@ -1,4 +1,4 @@
-package com.timbuchalka._static;
+package com._static;
 
 public class Main {
 

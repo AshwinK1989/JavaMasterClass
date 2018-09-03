@@ -21,7 +21,7 @@ public class LambdaExpression {
 
     public static void main(String[] args) {
 
-        B b = (String test)-> System.out.println(test);
+        B b = test-> System.out.println(test);
 
         b.Print("Hello");
 

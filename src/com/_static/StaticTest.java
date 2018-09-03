@@ -1,4 +1,4 @@
-package com.timbuchalka._static;
+package com._static;
 
 /**
  * Created by dev on 20/11/2015.
